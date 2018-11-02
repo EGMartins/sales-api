@@ -1,11 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe 'Sales API', type: :request do
-    let!(:sales) { create_list(:sale, 10) }
+  let(:user) { create(:user) }
+  let!(:sales) { create_list(:sale, 10) }
+
+  let(:headers) { valid_headers }
 
     describe 'GET /sales' do
-        # make HTTP get request before each example
-        before { get '/sales' }
+        before { get '/sales', params: {}, headers: headers }
     
         it 'returns sales' do
           # Note `json` is a custom helper to parse JSON responses

@@ -7,16 +7,32 @@ RSpec.describe 'Sales API', type: :request do
   let(:headers) { valid_headers }
 
     describe 'GET /sales' do
-        before { get '/sales', params: {}, headers: headers }
-    
-        it 'returns sales' do
-          # Note `json` is a custom helper to parse JSON responses
-          expect(json).not_to be_empty
-          expect(json.size).to eq(10)
-        end
-    
-        it 'returns status code 200' do
-          expect(response).to have_http_status(200)
-        end
+      before { get '/sales', params: {}, headers: headers }
+  
+      it 'returns sales' do
+        # Note `json` is a custom helper to parse JSON responses
+        expect(json).not_to be_empty
+        expect(json.size).to eq(10)
+      end
+  
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+    end
+
+    describe 'GET /this_year_sales' do
+      before { get '/this_year_sales', params: {}, headers: headers }
+  
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+    end
+
+    describe 'GET /two_years_sales' do
+      before { get '/two_years_sales', params: {}, headers: headers }
+
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
     end
 end

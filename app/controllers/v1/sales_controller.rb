@@ -9,8 +9,8 @@ module V1
       json_response @this_year_sales
     end
     def two_years_sales
-      @this_year_sales = Sale.two_years.group_by_year(:trans_date).sum(:total_extax_value)
-      json_response @this_year_sales
+      @two_years_sales = Sale.two_years.group_by_year(:trans_date).sum(:total_extax_value)
+      json_response @two_years_sales
     end
   end
 end

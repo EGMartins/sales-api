@@ -9,3 +9,9 @@ Some app specification:
 * Rails version: 5.2.2
 
 * Database: Mysql
+
+## API endpoints
+
+...
+teste
+...

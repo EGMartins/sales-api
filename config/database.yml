@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: sales-api_production
-  username: sales-api
-  password: <%= ENV['SALES-API_DATABASE_PASSWORD'] %>
+  database: us-cdbr-iron-east-01.cleardb.net/heroku_22f85eb5dd2f9ff
+  username: bfdf47409d146e
+  password: 4acc3395

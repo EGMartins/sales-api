@@ -10,6 +10,18 @@ Some app specification:
 
 * Database: Mysql
 
+## Instructions and setup
+
+**On the project folder run**:
+- _bundle install_
+- _rails db:create_
+- _rails db:migrate_
+- _rails s_
+
+**Tests, just run**
+- _rspec_
+
+
 ## API endpoints
 
 **POST _auth/login_** - Let the user sign in. This call returns the JWT token to be used on the next requests;

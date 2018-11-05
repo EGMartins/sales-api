@@ -16,6 +16,7 @@ Some app specification:
 - _bundle install_
 - _rails db:create_
 - _rails db:migrate_
+- _Import the SQL **Sales** table on the created database_
 - _rails s_
 
 **Tests, just run**

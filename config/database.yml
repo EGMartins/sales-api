@@ -51,6 +51,4 @@ production:
   # database: us-cdbr-iron-east-01.cleardb.net/heroku_22f85eb5dd2f9ff
   database: <%= ENV['DATABASE_URL'] %>
   adapter: mysql2
-  encoding: utf8
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  
+    

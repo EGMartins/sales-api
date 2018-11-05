@@ -50,8 +50,8 @@ test:
 production:
   <<: *default
   # database: us-cdbr-iron-east-01.cleardb.net/heroku_22f85eb5dd2f9ff
-  host: ENV['DATABASE_URL']
-  database: sales-api
+  host: us-cdbr-iron-east-01.cleardb.net
+  database: heroku_22f85eb5dd2f9ff
   username: ENV['DATABASE_URL_USERNAME']
   password: ENV['DATABASE_URL_PASSWORD']
   port: 3306

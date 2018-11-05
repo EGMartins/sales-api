@@ -21,5 +21,5 @@ Some app specification:
 
 **GET _this_year_sales_** - Return the ex tax value of the sales on the current year, grouped by month;
 
-**GET _two_years_sales_** - Return the the Gross Profit of the year, compating the last two years;
+**GET _two_years_sales_** - Return the the Gross Profit of the year, comparing the last two years;
 

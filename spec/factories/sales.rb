@@ -1,5 +1,3 @@
-#spec/factories/sales.rb
-
 FactoryBot.define do
     factory :sale do
         item_description { Faker::Lorem.word }

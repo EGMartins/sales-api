@@ -48,8 +48,6 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
   # database: us-cdbr-iron-east-01.cleardb.net/heroku_22f85eb5dd2f9ff
   database: <%= ENV['DATABASE_URL'] %>
-  username: bfdf47409d146e
-  password: 4acc3395
+  
